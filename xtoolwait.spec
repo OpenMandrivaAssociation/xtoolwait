@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/xtoolwait
-%{_mandir}/man1/xtoolwait.1x*
+%{_mandir}/man1/xtoolwait.1*
