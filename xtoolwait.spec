@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		System/Configuration/Other
-BuildRequires:	XFree86-devel imake libx11-devel libxext-devel
+BuildRequires:	X11-devel imake libx11-devel libxext-devel
 Url:		http://www.hacom.nl/~richard/software/xtoolwait.html
 Source:		ftp://ftp.x.org/contrib/utilities/%{name}-%{version}.tar.bz2
 Patch0:		xtoolwait-imake.patch.bz2
