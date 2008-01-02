@@ -12,6 +12,7 @@ BuildRequires:	X11-devel imake libx11-devel libxext-devel
 Url:		http://www.hacom.nl/~richard/software/xtoolwait.html
 Source:		ftp://ftp.x.org/contrib/utilities/%{name}-%{version}.tar.bz2
 Patch0:		xtoolwait-imake.patch.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Xtoolwait is a utility which starts an X client in the background, waits
