@@ -1,6 +1,6 @@
 %define name	xtoolwait
 %define version	1.3
-%define release	%mkrel 9
+%define release	%mkrel 11
 
 Summary:	A utility which aims to decrease X session startup time
 Name:		%{name}
