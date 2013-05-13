@@ -1,6 +1,6 @@
 %define name	xtoolwait
 %define version	1.3
-%define release	%mkrel 13
+%define release 	14
 
 Summary:	A utility which aims to decrease X session startup time
 Name:		%{name}
@@ -14,7 +14,6 @@ Buildrequires:	libxext-devel
 Url:		http://www.hacom.nl/~richard/software/xtoolwait.html
 Source:		ftp://ftp.x.org/contrib/utilities/%{name}-%{version}.tar.bz2
 Patch0:		xtoolwait-imake.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Xtoolwait is a utility which starts an X client in the background, waits
