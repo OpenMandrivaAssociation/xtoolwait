@@ -1,16 +1,12 @@
-%define name	xtoolwait
-%define version	1.3
-%define release 	14
-
 Summary:	A utility which aims to decrease X session startup time
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		xtoolwait
+Version:	1.3
+Release:	15
 License:	GPL
 Group:		System/Configuration/Other
 BuildRequires:	imake
 BuildRequires:	pkgconfig(x11)
-Buildrequires:	libxext-devel
+Buildrequires:	pkgconfig(xext)
 Url:		http://www.hacom.nl/~richard/software/xtoolwait.html
 Source:		ftp://ftp.x.org/contrib/utilities/%{name}-%{version}.tar.bz2
 Patch0:		xtoolwait-imake.patch
@@ -31,17 +27,14 @@ X sessions.
 
 %build
 xmkmf
-%make CDEBUGFLAGS="%optflags" EXTRA_LDOPTIONS="%ldflags"
+%make CDEBUGFLAGS="%{optflags}" EXTRA_LDOPTIONS="%{ldflags}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %{makeinstall_std} install.man
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/xtoolwait
 %{_mandir}/man1/xtoolwait.1*
 
