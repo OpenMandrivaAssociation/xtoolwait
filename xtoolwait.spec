@@ -1,7 +1,7 @@
 Summary:	A utility which aims to decrease X session startup time
 Name:		xtoolwait
 Version:	1.3
-Release:	15
+Release:	16
 License:	GPL
 Group:		System/Configuration/Other
 BuildRequires:	imake
