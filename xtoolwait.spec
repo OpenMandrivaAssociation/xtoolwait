@@ -7,7 +7,7 @@ Group:		System/Configuration/Other
 BuildRequires:	imake
 BuildRequires:	pkgconfig(x11)
 Buildrequires:	pkgconfig(xext)
-Url:		http://www.hacom.nl/~richard/software/xtoolwait.html
+Url:		https://www.hacom.nl/~richard/software/xtoolwait.html
 Source:		ftp://ftp.x.org/contrib/utilities/%{name}-%{version}.tar.bz2
 Patch0:		xtoolwait-imake.patch
 
